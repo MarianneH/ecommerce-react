@@ -1,14 +1,11 @@
+import CategoriesItem from "../components/categories-item/categories-item";
+import CategoriesList from "../components/categories-list/categories-list";
+
 const Categories = () => {
   return (
     <div>
-      <ul>
-        <li>
-          <b>file name:</b> categories.jsx
-        </li>
-        <li>
-          <b>component name:</b> Categories
-        </li>
-      </ul>
+      <CategoriesList />
+      <CategoriesItem />
     </div>
   );
 };
