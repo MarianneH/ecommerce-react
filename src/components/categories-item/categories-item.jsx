@@ -1,4 +1,11 @@
-const CategoriesItem = () => {
-  return <div>Categories List Here</div>;
+const CategoriesItem = (props) => {
+  const { name, image } = props;
+
+  return (
+    <div>
+      <h3>{name}</h3>
+      <img src={image} alt={name} />
+    </div>
+  );
 };
 export default CategoriesItem;
