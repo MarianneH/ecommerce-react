@@ -1,9 +1,9 @@
 import styles from "./categories-list.module.css";
 
-const CategoriesList = ({ data }) => {
+const CategoriesList = ({ categoriesResp }) => {
   return (
     <div className={styles.layout}>
-      {data.map((element, index) => {
+      {categoriesResp.map((element, index) => {
         const { id, name, image } = element;
         return (
           <div key={id || index}>
